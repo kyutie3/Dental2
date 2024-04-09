@@ -20,41 +20,71 @@
                 </div>
                 
                <!-- Sidebar button (visible on small screens only) -->
-<button class="openbtn" onclick="toggleNav()">&#9776;</button>
+                <button class="openbtn" onclick="toggleNav()">&#9776;</button>
 
-<!-- Container for navigation links (hidden on small screens) -->
-<div class="nav-container">
-    <!-- Header navigation (visible on large screens) -->
-    <nav class="header-nav">
-        <ul>
-            <li><a href="main_page.html">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li class="dropdown">
-                <a href="#services-section" class="dropbtn">Services <i class="fa fa-caret-down"></i></a>
-                <div class="dropdown-content">
-                    <a href="#">Orthodontics</a>
-                    <a href="#">Tooth colored</a>
-                    <a href="#">Tooth Extraction</a>
-                    <a href="#">Dentures</a>
-                    <a href="#">Oral Prophylaxis(cleaning)</a>
+                <!-- Container for navigation links (hidden on small screens) -->
+                <div class="nav-container">
+                    <!-- Header navigation (visible on large screens) -->
+                    <nav class="header-nav">
+                        <ul>
+                            <li><a href="main_page.html">Home</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li class="dropdown">
+                                <a href="#services-section" class="dropbtn">Services <i class="fa fa-caret-down"></i></a>
+                                <div class="dropdown-content">
+                                    <a href="#">Orthodontics</a>
+                                    <a href="#">Tooth colored</a>
+                                    <a href="#">Tooth Extraction</a>
+                                    <a href="#">Dentures</a>
+                                    <a href="#">Oral Prophylaxis(cleaning)</a>
+                                </div>
+                            </li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <!-- Appointment link within the sidebar -->
+                            <li class="appointment-link"><a href="appointment.php" class="active">Appointment</a></li>
+                            </ul>
+                    </nav>
                 </div>
-            </li>
-            <li><a href="contact.html">Contact</a></li>
-             <!-- Appointment link within the sidebar -->
-             <li class="appointment-link"><a href="appointment.php" class="active">Appointment</a></li>
-            </ul>
-    </nav>
-</div>
-
             </div>
         </header>
 
+        <style>
+            /* Define CSS animations in main content */
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(50px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+            @keyframes fadeInDown {
+                from {
+                    opacity: 0;
+                    transform: translateY(-50px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        
+            /* Apply animation to elements */
+            .text-main {
+                animation: fadeInUp 1s ease-out;
+            }
+            .image {
+                animation: fadeInDown 1s ease-out;
+            }
+        </style>
 
     <!-- Main content goes here -->
     <div class="container2">
         <div class="container3">
             <div class="content-wrapper1">
-                <div class="text">
+                <div class="text-main">
                     <h1>Welcome to Our Dental Clinic</h1>
                     <p>This is where you can introduce your dental clinic and provide information about your services.</p>
                 </div>
@@ -65,6 +95,36 @@
 
 
 
+
+            <style>
+                /* Define CSS animations */
+                @keyframes fadeInUp {
+                    from {
+                        opacity: 0;
+                        transform: translateY(50px);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+                @keyframes fadeInDown {
+                    from {
+                        opacity: 0;
+                        transform: translateY(-50px);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+            
+                /* Apply animation to services */
+                .services {
+                    animation: fadeInUp 1s ease-out;
+                }
+            </style>
+            
              <!--  SERVICES -->
              <section id="services-section"></section>
              <h2>Our Dental Services</h2>
@@ -120,6 +180,48 @@
             
 
 
+
+            <style>
+                /* Define CSS animations */
+                @keyframes fadeInUp {
+                    from {
+                        opacity: 0;
+                        transform: translateY(50px);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+                @keyframes fadeInDown {
+                    from {
+                        opacity: 0;
+                        transform: translateY(-50px);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+            
+                /* Apply animation to slider elements */
+                .slider1 {
+                    animation: fadeInUp 1s ease-out;
+                }
+
+
+                .service-content {
+                    animation: fadeInUp 1s ease-out;
+                }
+            
+                #prevBtn,
+                #nextBtn {
+                    animation: fadeInDown 1s ease-out;
+                }
+            </style>
+
+
+
     <!-- slider -->
     <div class="slider-container">
         <div class="content-wrapper2">
@@ -139,7 +241,7 @@
             </div>
 
 
-
+      
                 <!-- Slide 2 -->
             <div class="slide">
                 <img src="lisa.ico" alt="General Dentistry">
@@ -227,7 +329,7 @@
 
         showSlides(currentSlide);
     });
-
+    
     // Function to toggle the visibility of the menu bar
     function toggleNav() {
         var navContainer = document.querySelector('.nav-container');
@@ -237,8 +339,6 @@
             navContainer.style.left = '0px';
         }
     }
-
-    
 </script>
 
     <!-- End of JavaScript for Slider and Sidebar -->
