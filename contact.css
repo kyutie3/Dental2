@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 body {
@@ -153,7 +154,7 @@ nav ul li a:hover {
 }
 
 /* Media query for header and menu bar  (up to 600px) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
     .header-nav {
         display: block;
     }
@@ -176,8 +177,8 @@ nav ul li a:hover {
     .openbtn {
         display: block;
         position: fixed;
-        top: 10px; /* Adjust top position as needed */
-        left: 10px; /* Adjust left position as needed */
+        top: 25px; /* Adjust top position as needed */
+        left: 15px; /* Adjust left position as needed */
         z-index: 9999; /* Ensure the button appears above other content */
         font-size: 20px;
         cursor: pointer;
@@ -213,14 +214,14 @@ nav ul li a:hover {
     }
 
     .logo img {
-        width: 25px; /* Adjust the width of the logo as needed */
-        max-width: 25px; /* Set maximum width for responsiveness */
+        width: 35px; /* Adjust the width of the logo as needed */
+        max-width: 35px; /* Set maximum width for responsiveness */
         height: auto;
-        margin-left: 25px;
+        margin-left: 10px;
     }
 
     .logo h1 {
-        font-size: 15px; /* Adjust the font size of the logo name as needed */
+        font-size: 30px; /* Adjust the font size of the logo name as needed */
         margin-top: 15;
     }
 
@@ -228,7 +229,7 @@ nav ul li a:hover {
     /* Adjust header size */
     header {
         color: #f9fdfd;
-        padding: 11px; /* Adjust padding as needed */
+        padding: 20px; /* Adjust padding as needed */
        
     }
 
@@ -243,9 +244,8 @@ nav ul li a:hover {
     }
 }
 
-
 /* Media query for larger screens */
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 1000px) {
     /* Hide the sidebar button for larger screens */
     .openbtn {
         display: none;
@@ -262,6 +262,7 @@ footer {
     display: flex;
     flex-direction: column; /* Align items vertically */
     align-items: center; /* Center align content */
+    margin-top: 60px;
 }
 
 .social-media {
@@ -285,12 +286,15 @@ footer {
 .footer-text p {
     margin: 0; /* Remove default margin */
 }
+
 /* Media query for small screens */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
     footer {
         padding: 15px; /* Adjust padding for smaller screens */
     }
 }
+
+
 
 
 /* Main content goes here */
@@ -358,7 +362,7 @@ button[type="submit"]:hover {
     background-color: #0056b3;
 }
 /* Media query for small screens */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
     .contact_container {
         padding: 10px; /* Adjust padding for smaller screens */
     }
