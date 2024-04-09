@@ -154,7 +154,7 @@ nav ul li a:hover {
 }
 
 /* Media query for header and menu bar  (up to 600px) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
     .header-nav {
         display: block;
     }
@@ -177,8 +177,8 @@ nav ul li a:hover {
     .openbtn {
         display: block;
         position: fixed;
-        top: 10px; /* Adjust top position as needed */
-        left: 10px; /* Adjust left position as needed */
+        top: 25px; /* Adjust top position as needed */
+        left: 15px; /* Adjust left position as needed */
         z-index: 9999; /* Ensure the button appears above other content */
         font-size: 20px;
         cursor: pointer;
@@ -214,14 +214,14 @@ nav ul li a:hover {
     }
 
     .logo img {
-        width: 25px; /* Adjust the width of the logo as needed */
-        max-width: 25px; /* Set maximum width for responsiveness */
+        width: 35px; /* Adjust the width of the logo as needed */
+        max-width: 35px; /* Set maximum width for responsiveness */
         height: auto;
-        margin-left: 25px;
+        margin-left: 10px;
     }
 
     .logo h1 {
-        font-size: 15px; /* Adjust the font size of the logo name as needed */
+        font-size: 30px; /* Adjust the font size of the logo name as needed */
         margin-top: 15;
     }
 
@@ -229,7 +229,7 @@ nav ul li a:hover {
     /* Adjust header size */
     header {
         color: #f9fdfd;
-        padding: 11px; /* Adjust padding as needed */
+        padding: 20px; /* Adjust padding as needed */
        
     }
 
@@ -245,7 +245,7 @@ nav ul li a:hover {
 }
 
 /* Media query for larger screens */
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 1000px) {
     /* Hide the sidebar button for larger screens */
     .openbtn {
         display: none;
@@ -288,7 +288,7 @@ footer {
 }
 
 /* Media query for small screens */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
     footer {
         padding: 15px; /* Adjust padding for smaller screens */
     }
@@ -349,7 +349,7 @@ footer {
 }
 
 /* Media query for main content */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
     .content-wrapper1 {
         display: flex;
         justify-content: space-between;
@@ -428,23 +428,27 @@ footer {
     padding: 0 5px;
     box-sizing: border-box;
     position: relative; /* Add position relative */
+   margin-left: 20px;
+   margin-right: 5px;
+
+
 
 }
 
 .slide img {
-    width: 100%;
-    height: auto;
+    width: 90%;
+    height: 90%;
     display: block; /* Ensure image takes up full width */
 }
 
 .details {
     position: absolute; /* Position details absolutely */
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    bottom: 10%;
+    left: 5px;
+    width: 88.10%;
     background-color: rgba(247, 128, 128, 0.5);
     color: #fff;
-    padding: 10px;
+    padding: 0;
 }
 
 .details h2 {
@@ -484,7 +488,7 @@ footer {
 }
 
     /* Media query for small screens */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
     .content-wrapper2 h1 {
         font-size: 24px; /* Adjust font size for smaller screens */
     }
@@ -562,7 +566,7 @@ h2 {
 }
 
 /* Media query for small screens */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
     .services {
         padding-top: 30px; /* Adjust top padding for smaller screens */
         padding-bottom: 30px; /* Adjust bottom padding for smaller screens */
